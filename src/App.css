@@ -13,6 +13,25 @@ h1 {
   font-size: 4rem;
 }
 
+.btn {
+  display: flex;
+  gap: 0.5%;
+  justify-content: center;
+}
+
+.btnDel{
+  background: #f0f0f0;
+}
+
+.btnDel:hover{
+  background: #9c0d0d;
+}
+
+.btnDel:active {
+  background: #9c0d0d;
+  opacity: 0.4;
+}
+
 button {
   font-size: 2rem;
   min-width: 35px;
@@ -23,9 +42,47 @@ button {
 }
 
 button:hover {
-  background: rgba(255, 255, 255, 0.6);
+  background: #665e5e;
 }
 
 button:active {
-  background: rgba(0, 0, 0, 0.4);
+  background: #000000;
+  opacity: 0.4;
 }
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+.container input {
+  width: 65%;
+}
+
+.table {
+  width: 50%;
+  margin: auto;
+}
+.table tr {
+  width: 80%;
+  border: 1px solid grey;
+}
+.table tr:hover {
+  background-color: #665e5e;
+}
+.table tr th {
+  width: 10%;
+  border: 1px solid #444343;
+}
+
+.pagination {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 2%;
+  text-decoration: none;
+  list-style: none;
+  margin: auto;
+  cursor: pointer;
+}
+
+

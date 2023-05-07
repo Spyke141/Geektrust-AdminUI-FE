@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./UserData.css";
 import ReactPaginate from "react-paginate";
 import { AiTwotoneDelete, AiTwotoneEdit } from "react-icons/ai";
 
@@ -87,7 +86,7 @@ function UserData() {
                   <button onClick={handleUserEdit}>
                     <AiTwotoneEdit />
                   </button>
-                  <button onClick={() => handleDeleteUser(user.id)}>
+                  <button className="btnDel" onClick={() => handleDeleteUser(user.id)}>
                     <AiTwotoneDelete />
                   </button>
                 </td>
